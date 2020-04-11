@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CE5702136C7897FD1A6C0B9 /* Pods_DropBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D58C1A874EF90DB862D79B /* Pods_DropBox.framework */; };
+		8C5F0817244087CF009FC17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F0816244087CF009FC17B /* AppDelegate.swift */; };
+		8C5F0819244087CF009FC17B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F0818244087CF009FC17B /* SceneDelegate.swift */; };
+		8C5F081E244087CF009FC17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F081C244087CF009FC17B /* Main.storyboard */; };
+		8C5F0820244087D2009FC17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F081F244087D2009FC17B /* Assets.xcassets */; };
+		8C5F0823244087D2009FC17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F0821244087D2009FC17B /* LaunchScreen.storyboard */; };
+		8C5F0831244087F9009FC17B /* All_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F082C244087F9009FC17B /* All_Extensions.swift */; };
+		8C5F083924408803009FC17B /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F083624408803009FC17B /* DocumentVC.swift */; };
+		8C5F083A24408803009FC17B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F083724408803009FC17B /* BaseVC.swift */; };
+		8C5F083B24408803009FC17B /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F083824408803009FC17B /* LogInVC.swift */; };
+		8C5F08472440880D009FC17B /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F083E2440880C009FC17B /* BaseModel.swift */; };
+		8C5F085A2441D147009FC17B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5F08592441D147009FC17B /* CloudKit.framework */; };
+		8C5F08622441E77F009FC17B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F08612441E77F009FC17B /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43C4C74CC855BE0088ADBF4D /* Pods-DropBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropBox.debug.xcconfig"; path = "Target Support Files/Pods-DropBox/Pods-DropBox.debug.xcconfig"; sourceTree = "<group>"; };
+		54D58C1A874EF90DB862D79B /* Pods_DropBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DropBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5F0813244087CF009FC17B /* DropBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5F0816244087CF009FC17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C5F0818244087CF009FC17B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C5F081D244087CF009FC17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C5F081F244087D2009FC17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C5F0822244087D2009FC17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C5F0824244087D2009FC17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5F082C244087F9009FC17B /* All_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All_Extensions.swift; sourceTree = "<group>"; };
+		8C5F083624408803009FC17B /* DocumentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentVC.swift; sourceTree = "<group>"; };
+		8C5F083724408803009FC17B /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8C5F083824408803009FC17B /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		8C5F083E2440880C009FC17B /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		8C5F08582441D0D0009FC17B /* DropBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DropBox.entitlements; sourceTree = "<group>"; };
+		8C5F08592441D147009FC17B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8C5F08612441E77F009FC17B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		965B4CED2AEBF11C896EA5FF /* Pods-DropBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DropBox.release.xcconfig"; path = "Target Support Files/Pods-DropBox/Pods-DropBox.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C5F0810244087CF009FC17B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE5702136C7897FD1A6C0B9 /* Pods_DropBox.framework in Frameworks */,
+				8C5F085A2441D147009FC17B /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		843CB8655CB2307D804E122F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F08592441D147009FC17B /* CloudKit.framework */,
+				54D58C1A874EF90DB862D79B /* Pods_DropBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C5F080A244087CF009FC17B = {
+			isa = PBXGroup;
+			children = (
+				8C5F0815244087CF009FC17B /* DropBox */,
+				8C5F0814244087CF009FC17B /* Products */,
+				FF7A0388B1E7651BE32E23CE /* Pods */,
+				843CB8655CB2307D804E122F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C5F0814244087CF009FC17B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F0813244087CF009FC17B /* DropBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C5F0815244087CF009FC17B /* DropBox */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F08582441D0D0009FC17B /* DropBox.entitlements */,
+				8C5F083C2440880C009FC17B /* Model */,
+				8C5F083524408803009FC17B /* Controllers */,
+				8C5F082A244087F9009FC17B /* Settings */,
+				8C5F0816244087CF009FC17B /* AppDelegate.swift */,
+				8C5F0818244087CF009FC17B /* SceneDelegate.swift */,
+				8C5F081C244087CF009FC17B /* Main.storyboard */,
+				8C5F081F244087D2009FC17B /* Assets.xcassets */,
+				8C5F0821244087D2009FC17B /* LaunchScreen.storyboard */,
+				8C5F0824244087D2009FC17B /* Info.plist */,
+			);
+			path = DropBox;
+			sourceTree = "<group>";
+		};
+		8C5F082A244087F9009FC17B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F082B244087F9009FC17B /* Extensions */,
+				8C5F08612441E77F009FC17B /* Constant.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8C5F082B244087F9009FC17B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F082C244087F9009FC17B /* All_Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C5F083524408803009FC17B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F083624408803009FC17B /* DocumentVC.swift */,
+				8C5F083724408803009FC17B /* BaseVC.swift */,
+				8C5F083824408803009FC17B /* LogInVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C5F083C2440880C009FC17B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C5F083E2440880C009FC17B /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF7A0388B1E7651BE32E23CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43C4C74CC855BE0088ADBF4D /* Pods-DropBox.debug.xcconfig */,
+				965B4CED2AEBF11C896EA5FF /* Pods-DropBox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C5F0812244087CF009FC17B /* DropBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C5F0827244087D2009FC17B /* Build configuration list for PBXNativeTarget "DropBox" */;
+			buildPhases = (
+				AFE0CED4DA12958C6D7FF7A6 /* [CP] Check Pods Manifest.lock */,
+				8C5F080F244087CF009FC17B /* Sources */,
+				8C5F0810244087CF009FC17B /* Frameworks */,
+				8C5F0811244087CF009FC17B /* Resources */,
+				DAE495FE4CB085EC944770EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropBox;
+			productName = DropBox;
+			productReference = 8C5F0813244087CF009FC17B /* DropBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C5F080B244087CF009FC17B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Abdul Qadar";
+				TargetAttributes = {
+					8C5F0812244087CF009FC17B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C5F080E244087CF009FC17B /* Build configuration list for PBXProject "DropBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C5F080A244087CF009FC17B;
+			productRefGroup = 8C5F0814244087CF009FC17B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C5F0812244087CF009FC17B /* DropBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C5F0811244087CF009FC17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5F0823244087D2009FC17B /* LaunchScreen.storyboard in Resources */,
+				8C5F0820244087D2009FC17B /* Assets.xcassets in Resources */,
+				8C5F081E244087CF009FC17B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFE0CED4DA12958C6D7FF7A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DropBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE495FE4CB085EC944770EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropBox/Pods-DropBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DropBox/Pods-DropBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DropBox/Pods-DropBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C5F080F244087CF009FC17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5F083924408803009FC17B /* DocumentVC.swift in Sources */,
+				8C5F08622441E77F009FC17B /* Constant.swift in Sources */,
+				8C5F083A24408803009FC17B /* BaseVC.swift in Sources */,
+				8C5F0817244087CF009FC17B /* AppDelegate.swift in Sources */,
+				8C5F08472440880D009FC17B /* BaseModel.swift in Sources */,
+				8C5F0819244087CF009FC17B /* SceneDelegate.swift in Sources */,
+				8C5F0831244087F9009FC17B /* All_Extensions.swift in Sources */,
+				8C5F083B24408803009FC17B /* LogInVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C5F081C244087CF009FC17B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C5F081D244087CF009FC17B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C5F0821244087D2009FC17B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C5F0822244087D2009FC17B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C5F0825244087D2009FC17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C5F0826244087D2009FC17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C5F0828244087D2009FC17B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C4C74CC855BE0088ADBF4D /* Pods-DropBox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DropBox/DropBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JY4VX2GD6;
+				INFOPLIST_FILE = DropBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DropBox.DropBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C5F0829244087D2009FC17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965B4CED2AEBF11C896EA5FF /* Pods-DropBox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DropBox/DropBox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JY4VX2GD6;
+				INFOPLIST_FILE = DropBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DropBox.DropBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C5F080E244087CF009FC17B /* Build configuration list for PBXProject "DropBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5F0825244087D2009FC17B /* Debug */,
+				8C5F0826244087D2009FC17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C5F0827244087D2009FC17B /* Build configuration list for PBXNativeTarget "DropBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5F0828244087D2009FC17B /* Debug */,
+				8C5F0829244087D2009FC17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C5F080B244087CF009FC17B /* Project object */;
+}
